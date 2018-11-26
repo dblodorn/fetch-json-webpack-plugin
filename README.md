@@ -26,3 +26,5 @@ module.exports = {
   // ...
 };
 ```
+
+### Options
