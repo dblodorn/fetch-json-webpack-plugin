@@ -11,7 +11,7 @@ npm i fetch-json-webpack-plugin -D
 
 ```js
 // webpack.config.js
-const GenerateJsonPlugin = require('fetch-json-webpack-plugin');
+const FetchJsonWebpackPlugin = require('fetch-json-webpack-plugin');
 
 module.exports = {
   // ...
