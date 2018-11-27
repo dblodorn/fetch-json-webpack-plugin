@@ -15,6 +15,7 @@ I prefer to call the actual data endpoint during development and just use this i
 Example controller:
 
 ```js
+  // fetchDataController.js
   import fetch from 'isomorphic-fetch'
 
   const endpoint = 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data'
@@ -32,6 +33,24 @@ Example controller:
     })
   }
 
+```
+
+Use controller in application, (for example a redux action that adds your api call to your data store):
+
+```js
+  //fetchApiData.action.js
+  import fetchDataController from './fetchDataController'
+  
+  export default () => {
+    return (dispatch) => {
+      const _dataHandler = (payload) => {
+        dispatch(DATA_REDUCER(payload))
+      }
+      fetchDataController()
+        .then(response => response.json())
+        .then((payload) => _dataHandler(payload))
+    }
+  }
 ```
 
 ## Installation
