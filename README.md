@@ -2,7 +2,7 @@
 Webpack plugin to generate JSON assets from data api endpoints.
 
 [![License](https://img.shields.io/npm/l/express.svg)](https://github.com/dblodorn/fetch-json-webpack-plugin/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/dblodorn/fetch-json-webpack-plugin.svg?branch=master)](https://travis-ci.org/dblodorn/fetch-json-webpack-plugin)
+[![Build Status](https://travis-ci.org/dblodorn/fetch-json-webpack-plugin.svg?branch=master)](https://travis-ci.org/dblodorn/fetch-json-webpack-plugin) [![Greenkeeper badge](https://badges.greenkeeper.io/dblodorn/fetch-json-webpack-plugin.svg)](https://greenkeeper.io/)
 
 ## Motivation
 
