@@ -1,6 +1,6 @@
 {
   "name": "fetch-json-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin to generate JSON assets from data api endpoints.",
   "main": "lib/index.js",
   "scripts": {
