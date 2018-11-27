@@ -2,6 +2,9 @@
   "name": "fetch-json-webpack-plugin",
   "version": "1.0.1",
   "description": "Webpack plugin to generate JSON assets from data api endpoints.",
+  "author": "Dain Blodorn Kim",
+  "license": "ISC",
+  "private": false,
   "main": "lib/index.js",
   "scripts": {
     "build": "webpack --progress --config=fixtures/build/webpack.nohash.js --mode production --env.NODE_ENV",
@@ -23,8 +26,6 @@
     "fetch",
     "static"
   ],
-  "author": "Dain Blodorn Kim",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/dblodorn/fetch-json-webpack-plugin/issues"
   },
