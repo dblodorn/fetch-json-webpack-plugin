@@ -24,7 +24,7 @@
     "static"
   ],
   "author": "Dain Blodorn Kim",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/dblodorn/fetch-json-webpack-plugin/issues"
   },
