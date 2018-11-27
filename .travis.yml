@@ -1,9 +1,13 @@
+sudo: false
 language: node_js
+os:
+  - linux
+  - osx
 node_js:
-  - "8"
-  - "9"
-  - "10"
-  - "11"
-script:
-  - npm run lint
-  - npm run test
+  - 8
+  - 9
+  - 10
+script: npm run test
+cache:
+  directories:
+    - node_modules
