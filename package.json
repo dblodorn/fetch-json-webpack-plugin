@@ -35,7 +35,7 @@
     "eslint": "^5.9.0",
     "jest": "^23.6.0",
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli": "^3.3.10",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
