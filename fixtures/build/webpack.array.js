@@ -7,12 +7,12 @@ module.exports = merge(common, {
     new FetchJsonWebpackPlugin({
       endpoint: [
         {
-          endpoint: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
-          filename: 'data-1'
+          url: 'https://dmbk.io/wp-json/dmbk-io-api/v1/core',
+          filename: 'dmbk-core'
         },
         {
-          endpoint: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
-          filename: 'data-2'
+          url: 'hts://dmbk.io/wp-json/dmbk-io-api/v1/derpyn',
+          filename: 'derpyvision'
         }
       ],
       hash: true,
