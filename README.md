@@ -98,27 +98,20 @@ new FetchJsonWebpackPlugin({
   // Default: null
   endpoints: [
     {
-      url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
+      url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data'
       // Endpoint URL exposing valid json data.
-      filename: 'data-1'
-      // Your filename that you will be referencing in your application
-      // Default: 'data'
     },
     {
       url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data-2',
-      filename: 'data-2'
+      // Endpoint URL exposing valid json data.
+      filename: 'data-2',
+      // Your filename that you will be referenced in your application
+      // Default: 'data-${file #}'
+      hash: true
+      // True if you want to add the build hash to your json file - data.[hash].json - recommended for cache busting.
+      // Default: false, if left out will also default to false
     }
-  ],
-  
-  
-  
-  endpoint: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
-  // Your filename that you will be referencing in your application
-  // Default: 'data'
-  filename: 'data',
-  // True if you want to add the build hash to your json file - data.[hash].json - recommended for cache busting.
-  // Default: false
-  hash: true,
+  ]
 }),
 ```
 
