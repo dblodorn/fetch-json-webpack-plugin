@@ -6,8 +6,7 @@ const defaults = require('./defaults');
 module.exports = merge(common, {
   plugins: [
     new FetchJsonWebpackPlugin({
-      ...defaults,
-      hash: true,
+      ...defaults
     }),
   ],
 });
