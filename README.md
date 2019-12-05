@@ -74,14 +74,15 @@ module.exports = {
       endpoints: [
         {
           url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
-          filename: 'data-1'
+          filename: 'data-1',
+          hash: true
         },
         {
           url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data-2',
-          filename: 'data-2'
+          filename: 'data-2',
+          hash: true
         }
-      ],
-      hash: true,
+      ]
     }),
   ]
   // ...
