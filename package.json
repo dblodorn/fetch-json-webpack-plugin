@@ -7,7 +7,7 @@
   "private": false,
   "main": "lib/index.js",
   "scripts": {
-    "build": "webpack --progress --config=fixtures/build/webpack.nohash.js --mode production --env.NODE_ENV",
+    "build": "webpack --progress --config=fixtures/build/webpack.array.js --mode production --env.NODE_ENV",
     "lint": "eslint .",
     "test": "npm run lint && jest"
   },
