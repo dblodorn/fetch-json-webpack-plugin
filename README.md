@@ -1,5 +1,6 @@
 # fetch-json-webpack-plugin
-Webpack plugin to generate JSON assets from data api endpoints.
+## Version 2.0.0
+Webpack plugin to generate JSON assets from data api endpoints. Version 2.0.0 accepts an array of endpoints and generates a separate json file for each endpoint.
 
 [![License](https://img.shields.io/npm/l/express.svg)](https://github.com/dblodorn/fetch-json-webpack-plugin/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/dblodorn/fetch-json-webpack-plugin.svg?branch=master)](https://travis-ci.org/dblodorn/fetch-json-webpack-plugin) [![Greenkeeper badge](https://badges.greenkeeper.io/dblodorn/fetch-json-webpack-plugin.svg)](https://greenkeeper.io/)
@@ -70,8 +71,16 @@ module.exports = {
   plugins: [
     // ...
     new FetchJsonWebpackPlugin({
-      endpoint: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
-      filename: 'data',
+      endpoints: [
+        {
+          url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
+          filename: 'data-1'
+        },
+        {
+          url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data-2',
+          filename: 'data-2'
+        }
+      ],
       hash: true,
     }),
   ]
@@ -85,8 +94,24 @@ Three options can be passed to Fetch Json Webpack Plugin, the endpoint to fetch 
 
 ```js
 new FetchJsonWebpackPlugin({
-  // Enpoint URL exposing valid json data.
+  // Array of Endpoint URLs exposing valid json data.
   // Default: null
+  endpoints: [
+    {
+      url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
+      // Endpoint URL exposing valid json data.
+      filename: 'data-1'
+      // Your filename that you will be referencing in your application
+      // Default: 'data'
+    },
+    {
+      url: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data-2',
+      filename: 'data-2'
+    }
+  ],
+  
+  
+  
   endpoint: 'https://5bfc3529cf9d29001345c585.mockapi.io/fjwp/v1/data',
   // Your filename that you will be referencing in your application
   // Default: 'data'
