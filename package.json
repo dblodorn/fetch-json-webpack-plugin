@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/dblodorn/fetch-json-webpack-plugin#readme",
   "devDependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "clean-webpack-plugin": "^1.0.0",
     "eslint": "^5.9.0",
     "node-fetch": "^2.3.0",
